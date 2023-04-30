@@ -1,0 +1,151 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    }
+
+/* navbar css */
+.navbar{
+    margin: 0px 100px;
+}
+
+.nav-search{
+    display: flex;
+}
+
+/* carousel css */
+.d-block img{
+    width: 10%;
+    height:10px;
+}
+/* below carousel */
+.fleximg{
+    display:flex;
+    justify-content:space-around;
+    flex-direction: row;
+    margin: 50px ;
+}
+.nature img{
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+}
+/* grid css */
+.gallery{
+    display: grid;
+    grid-template-columns:repeat(3,33%);
+    margin: 10px 20px 10px 20px;
+    justify-content:space-around;
+}
+
+.anime img{
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+}
+
+/* Card Section css */
+.card-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 25px 50px;
+    padding: 20px;
+}
+.card{
+    height: fit-content;
+}
+
+/* footer */
+.text-bg-light{
+    margin-top: 50px ;
+    padding: 20px 35px;
+    flex-direction: column;
+
+}
+.d-flex {
+    flex-wrap: wrap;
+}
+
+/* media */
+/* for screen less than or equals to 768px */
+@media screen and (min-width:360px)and (max-width: 768px) {
+
+    /* navbar */
+    .navbar{
+        margin: 0px;
+    }
+
+    .nav-search{
+        flex-wrap: nowrap;
+    }
+
+    /* carousel */
+    .carousel-caption{
+        top: 45%;
+    }
+    .carousel-caption h5 {
+        font-size: 15px;
+        margin-bottom: 2px;
+    }
+    .carousel-caption p{
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+    .carousel-item .btn{
+        --bs-btn-padding-x: 0.1rem;
+        --bs-btn-padding-y: 0.2rem;
+        --bs-btn-font-size: 0.7rem;
+    }
+    .d-md-block {
+        display: block!important;
+    }
+
+    /* Section flex */
+    .section-1{
+        flex-wrap: wrap;
+    }
+
+    /* photo-gallery */
+    .gallery div img{
+        width:200px;
+    }
+
+    /* card */
+    .card-section{
+         flex-wrap: wrap;
+    }
+    .card{
+        margin: 10px 10px;
+    }
+    /* footer */
+    .text-bg-light {
+        padding: 20px 35px;
+    }
+    .d-flex {
+        justify-content: space-between;
+        flex-direction: column;        
+        }
+    .foo-btn{
+        width: fit-content;
+        align-self: end;
+    }
+}
+ 
+  @media screen and (min-width:  769px) and (max-width: 960px) {
+
+    /* footer */
+    .navbar{
+        margin: 0px;
+    }
+
+    /* section flex */
+    .fleximg{
+        flex-wrap: wrap;
+    }
+
+    /* footer */
+    .foo-btn{
+        width: fit-content;
+        align-self: end;
+    }
+}
